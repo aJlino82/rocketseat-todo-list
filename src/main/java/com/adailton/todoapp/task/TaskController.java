@@ -17,6 +17,7 @@ public class TaskController {
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public void creat(@RequestBody TaskModel taskModel) {
+        System.out.println("Cheogu no controller");
         taskRepository.save(taskModel);
     }
 
